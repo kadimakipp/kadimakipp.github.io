@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ubuntu+subl]]></title>
+    <url>%2F2019%2F03%2F07%2Fubuntu-subl%2F</url>
+    <content type="text"><![CDATA[写在文章首页，sublime 被屏蔽的好狠啊啊啊啊 install sublime献上我的sh脚本文件1234sudo add-apt-repository ppa:webupd8team/sublime-text-3;sudo apt-get update;sudo apt-get install sublime-text-installer;sudo ln -s /usr/lib/sublime-text-3/sublime_text /usr/local/bin/sublime; 配置license网上搜索一个license， 然后放在help-&gt;license 最后点use license12345678910111213—– BEGIN LICENSE —–Michael BarnesSingle User LicenseEA7E-8213858A353C41 872A0D5C DF9B2950 AFF6F667C458EA6D 8EA3C286 98D1D650 131A97ABAA919AEC EF20E143 B361B1E7 4C8B7F04B085E65E 2F5F5360 8489D422 FB8FC1AA93F6323C FD7F7544 3F39C318 D95E6480FCCC7561 8A4A1741 68FA4223 ADCEDE07200C25BE DBBC4855 C4CFB774 C5EC138C0FEC1CEF D9DCECEC D3A5DAD1 01316C36—— END LICENSE —— 附上licenselink. ##请支持正版## 安装Package Control官网传送门 简单方法: View-&gt;Show console 最下放输入:1import urllib.request,os,hashlib; h = &apos;6f4c264a24d933ce70df5dedcf1dcaee&apos; + &apos;ebe013ee18cced0ef93d5f746d80ef60&apos;; pf = &apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &apos;http://packagecontrol.io/&apos; + pf.replace(&apos; &apos;, &apos;%20&apos;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&apos;Error validating download (got %s instead of %s), please try manual install&apos; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &apos;wb&apos; ).write(by) 但是由于被墙，已输入就死机，所以使用另外一种方法 手动 点击Preferences -&gt; Browse Packages 调到上层文件夹 Installed Packages下面 下载Package Control.sublime-package，并复制到Installed Packages下面 重启sublime 如果不行删除多试几次 禁止检查更新 点击Preferences -&gt; Package Settings -&gt; Package Control -&gt; Settings user 大括号内添加 &quot;update_check&quot;: false 注意要在上调语句后加, 如果这样还不好使的话，打开/etc/hosts文件， 添加一句127.0.0.1 www.sublimetext.com 重启生效 install Package无效由于被墙的原因，在Preferences -&gt; Package Settings -&gt; Package Control -&gt; Settings user盖原来链接，参考here1234&quot;channels&quot;: [ &quot;/home/kipp/.config/sublime-text-3/Packages/json/channel_v3.json&quot; ], 先写到这里，快一点了改睡觉了。。。GFW。。。。ps:虽然可以搜索，但是仍然不能使用。。。。 答应姐姐的hexo部署文档还没写。。。。]]></content>
+      <categories>
+        <category>Ubuntu soft</category>
+      </categories>
+      <tags>
+        <tag>Ubuntu</tag>
+        <tag>Sublime Text3</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F03%2F04%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
